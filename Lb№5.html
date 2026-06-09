@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreadHouse - Магазин свіжої випічки (Grid)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">BreadHouse</div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <button class="btn btn-cart">Кошик (0)</button>
+        </div>
+    </header>
+
+    <main class="page-layout">
+        
+        <aside class="sidebar">
+            <h3>Фільтри випічки</h3>
+            <div class="filter-group">
+                <h4>Категорії</h4>
+                <ul>
+                    <li><label><input type="checkbox" checked /> Свіжий хліб</label></li>
+                    <li><label><input type="checkbox" checked /> Круасани & Здоби</label></li>
+                    <li><label><input type="checkbox" /> Тістечка та торти</label></li>
+                </ul>
+            </div>
+            <div class="filter-group">
+                <h4>Особливості</h4>
+                <ul>
+                    <li><label><input type="checkbox" /> Без глютену</label></li>
+                    <li><label><input type="checkbox" /> На заквасці</label></li>
+                    <li><label><input type="checkbox" /> Веганські</label></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="products-content">
+            <h2>Наш асортимент</h2>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?q=80&w=600" alt="Хліб" class="product-img">
+                    <h3 class="product-title">Домашній хліб на заквасці</h3>
+                    <p class="product-desc">Свіжий житній хліб із хрусткою скоринкою, випечений за старовинним рецептом.</p>
+                    <span class="product-price">45 грн</span>
+                    <button class="btn-buy">Купити</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://media.admagazine.fr/photos/655c8acc4227cd0f228321fb/master/w_1600%2Cc_limit/Au%2520140%2520Par%2520Fre%25CC%2581de%25CC%2581ric%2520Comyn%2520-%2520Anne%2520Fashauer%2520%2520(1).jpg?q=80&w=600" alt="Круасан" class="product-img">
+                    <h3 class="product-title">Масляний круасан</h3>
+                    <p class="product-desc">Хрусткий французький круасан із листкового тіста на натуральному маслі.</p>
+                    <span class="product-price">30 грн</span>
+                    <button class="btn-buy">Купити</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://deluxe.com.ua/media/img/uploads/bul-with-cinnamon.jpg?q=80&w=600" alt="Булочки" class="product-img">
+                    <h3 class="product-title">Булочки з корицею</h3>
+                    <p class="product-desc">Ароматні та надзвичайно ніжні солодкі булочки з вершковим глазуруванням.</p>
+                    <span class="product-price">55 грн</span>
+                    <button class="btn-buy">Купити</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-20c1VSQJ2xkbIgjBQ1Oun_KuL0TgQnsY72kGEiJUf6LWl2KVK8KYoDP1&s=10?q=80&w=600" alt="Пончики" class="product-img">
+                    <h3 class="product-title">Сет фірмових пончиків</h3>
+                    <p class="product-desc">Набір із різнокольоровою глазур'ю та фруктовыми начинками для вашого настрою.</p>
+                    <span class="product-price">120 грн</span>
+                    <button class="btn-buy">Купити</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvDStabVcH-2gGk7MQ028S6teak-lUAvQ9stXqrGFpslj8s7R_djgnWN8&s=10?q=80&w=600" alt="Пиріг" class="product-img">
+                    <h3 class="product-title">Ягідний тарт</h3>
+                    <p class="product-desc">Пісочна основа з ніжним заварним кремом та великою кількістю свіжої лохини та малини.</p>
+                    <span class="product-price">95 грн</span>
+                    <button class="btn-buy">Купити</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/B10F0941-3518-440D-A69F-72EFF5F7826B/Derivates/D5691ACE-1B10-42D8-8364-11402524A36D.jpg?q=80&w=600" alt="Багет" class="product-img">
+                    <h3 class="product-title">Французький багет</h3>
+                    <p class="product-desc">Традиційний довгий хліб із м'яким пористим м'якушем та золотистою скоринкою.</p>
+                    <span class="product-price">25 грн</span>
+                    <button class="btn-buy">Купити</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 BreadHouse — Пекарня свіжої випічки</p>
+    </footer>
+
+</body>
+</html>
